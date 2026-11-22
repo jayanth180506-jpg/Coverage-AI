@@ -1,0 +1,2 @@
+n_train,n_official_test,mae_dbm,rmse_dbm,r2,unknown_ap_fraction
+18973,34179,7.589305786332469,9.981367268096237,0.06933333307150402,0.0

@@ -1,0 +1,20 @@
+{
+  "model_type": "DecisionTreeRegressor",
+  "feature_names": [
+    "x",
+    "y",
+    "floor_id",
+    "building_num",
+    "ap_mean_rssi"
+  ],
+  "building_map": {
+    "SAH1": 0,
+    "TIE1": 1
+  },
+  "global_mean_rssi": -74.59616139737548,
+  "best_depth": 4,
+  "best_leaf": 50,
+  "cv_mae": 7.780337042855936,
+  "dataset": "D5",
+  "n_ap_mean_entries": 1319
+}

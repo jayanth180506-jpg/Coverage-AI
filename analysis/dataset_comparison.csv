@@ -1,0 +1,7 @@
+dataset_id,name,rssi_prediction_suitability,localization_suitability,coverage_classification_suitability,propagation_research_suitability,coord_matches_esp32,not_detected_convention,class,notes
+D5,Tampere multi-building,high,high,high (derived),medium,yes (X/Y metres),+100 dBm,A,PRIMARY: metre coords + documented +100 + 2 buildings for spatial splits
+D1,UJIIndoorLoc-UCI,high,high,high (derived),medium,partial (projected planar coords; source CRS/origin needs confirmation),+100 dBm,"A,B","large, well-documented; coordinates are not WGS84 degrees"
+D4,Tampere WLAN RSS,medium-high,high,medium,medium,likely yes (verify units),inspect,"A,B",smaller single-building fingerprint set
+D2,UJIIndoorLoc-Kaggle,high,high,high (derived),medium,partial,+100 dBm,"A,B",mirror of D1; needs Kaggle auth
+D3,WILD-v2,medium,high,medium,low,unknown,inspect,B,competition; needs Kaggle auth
+D6,Crowdsourced WiFi,low,medium,low,medium,yes (local X/Y metres),+100 dBm,"B,D",heterogeneous; Zenodo says MIT but bundled README says CC BY 4.0; resolve before redistribution

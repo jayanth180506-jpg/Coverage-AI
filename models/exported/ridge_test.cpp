@@ -1,0 +1,3 @@
+#include "wifi_rssi_ridge.h"
+#include <cstdio>
+int main(){FILE*in=fopen("ridge_test_inputs.csv","r");if(!in)return 1;char line[512];fgets(line,sizeof(line),in);double x,y,a,p;int f,b;double mx=0,sm=0;int n=0;while(fgets(line,sizeof(line),in)){if(sscanf(line,"%lf,%lf,%d,%d,%lf,%lf",&x,&y,&f,&b,&a,&p)==6){double d=wifi_ridge::predictRSSI(x,y,f,b,a)-p;if(d<0)d=-d;if(d>mx)mx=d;sm+=d;n++;}}fclose(in);printf("rows=%d max_abs_diff=%.12g mean_abs_diff=%.12g\\n",n,mx,sm/(n?n:1));return 0;}

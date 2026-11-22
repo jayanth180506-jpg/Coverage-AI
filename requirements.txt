@@ -1,0 +1,15 @@
+# COVERAGE-AI Machine Learning Pipeline - Python dependencies
+# Tested on Python 3.11.9 (Windows). Pin versions known to work together.
+
+pandas==2.2.2
+numpy==1.26.4
+scipy==1.13.0
+scikit-learn==1.4.2
+matplotlib==3.11.2
+seaborn==0.13.2
+joblib==1.4.2
+requests==2.32.3
+kaggle==2.2.3
+
+# Optional / convenience (already installed in this environment)
+# jupyter, notebook, geopandas
